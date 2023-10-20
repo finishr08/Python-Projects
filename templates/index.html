@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+<style>
+    /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation styles */
+nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        padding: 5px 0;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
+/* Style the navigation menu */
+nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style list items within the navigation menu */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style links within the navigation menu */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style the active link when selected */
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    background-color: #555;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; 
+  object-fit: cover;
+  margin: 0 auto; /* Center horizontally */
+  transition: filter 0.3s; /* Add transition for smooth hover effect */
+}
+
+.hero-image:hover {
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+
+
+.main-button {
+    text-align: center; /* Center the links */
+    
+}
+
+.main-button a {
+    display: inline-block; /* Display as inline-block to stay in a line */
+    width: 30%; /* Make each link take 30% width to fit three in a row with some spacing */
+    margin: 10px; /* Add margin for better spacing */
+    background-color: #555; /* Example background color */
+    color: #fff; /* Example text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+}
+
+.main-button a:hover{
+    background-color: #777; /* Change background color on hover */
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
+
+/* Media query for smaller screens to stack links */
+@media (max-width: 768px) {
+    .main-button a {
+        width: 100%; /* Full width on smaller screens, stacking links */
+    }
+}
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>PUT Library</h1>
+    </header>
+    <!-- <nav>
+        <ul>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/user_profile">Profile</a></li>
+            <li><a href="/add_book">Add a Book</a></li>
+            <li><a href="/display_books">Display Books</a></li>
+            <li><a href="/borrow_book">Borrow a Book</a></li>
+            <li><a href="/return_book">Return a Book</a></li>
+        </ul>
+    </nav> -->
+    <main>
+        <center><h2>Explore and manage the library's collection.</h2></center>
+        <br>
+        <img class="hero-image" src="https://media.istockphoto.com/id/1498104645/photo/library-during-the-day.webp?b=1&s=170667a&w=0&k=20&c=L1WCGkF71wB1yGWxQ9ZXJNvy-4976hCo_5Y4MgcFnCM=" alt="Hero Image">
+        <br>
+        
+
+        
+        
+    </main>
+    <main>
+        <center>
+        <h2>Library Management System</h2>
+    </center>
+    <br>
+    <hr>
+    <br>
+        <div class="main-button">
+            <a href="/register">Register</a>
+            <a href="/user_profile">Profile</a>
+            <a href="/add_book">Add a Book</a>
+            <a href="/display_books">Display Books</a>
+            <a href="/borrow_book">Borrow a Book</a>
+            <a href="/return_book">Return a Book</a>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mustafa Ahmed</p>
+    </footer>
+</body>
+</html>
+
+<!-- <div class="box">
+    <div class="box-content">
+      <h2>REGISTAR</h2>
+      <div
+        class="box-image1"
+        style="background-image: url('images/box6_image.jpg')"
+      ></div>
+      <p>See more</p>
+    </div>
+  </div> -->

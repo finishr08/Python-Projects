@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Books</title>
+<style>
+    /* Apply styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style table header */
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style alternating rows for better readability */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+table td {
+    font-size: 1rem;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Style the navigation menu */
+nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style list items within the navigation menu */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style links within the navigation menu */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style the active link when selected */
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    background-color: #555;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Available Books</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/user_profile">Profile</a></li>
+            <li><a href="/add_book">Add a Book</a></li>
+            <li><a href="/display_books">Display Books</a></li>
+            
+            <li><a href="/borrow_book">Borrow a Book</a></li>
+            <li><a href="/return_book">Return a Book</a></li>
+        </ul>
+    </nav>
+<!-- ... other HTML code ... -->
+<main>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Copies Available</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.copies }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</main>
+<!-- ... other HTML code ... -->
+
+    <footer>
+        <p>&copy; 2023 Library Management System</p>
+    </footer>
+</body>
+</html>
